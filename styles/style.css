@@ -1,0 +1,21 @@
+body {
+    background-color:#42213D;
+    color:#C2C1C2;
+}
+
+strong{
+    color: #37718E;
+    
+}
+
+a {
+    color: #37718E;
+    border: 1px solid #37718E;
+    padding: 10px;
+}
+
+
+footer {
+    background-color: #683257;
+    color:#C2C1C2;
+}

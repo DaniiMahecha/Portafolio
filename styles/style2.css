@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+    color: red;
+}
+
+a {
+    color:brown;
+}
+
+h2 {
+    color: yellow;
+}
+
+li{
+    color:indigo;
+}
+
+strong{
+    color: #3B3B1A;
+}
+
+footer {
+    background-color:#AEC8A4;
+}

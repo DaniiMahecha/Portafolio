@@ -1,21 +1,41 @@
-body {
-    background-color:#42213D;
-    color:#C2C1C2;
+* {
+	padding: 0;
+	margin: 0;
 }
 
-strong{
-    color: #37718E;
-    
+body {
+    background-color:#000B05;
+    color: azure;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.self-introduction{
+    display: flex;
+    align-items: center;
+    margin: 12%;
+    justify-content: space-between;
+}
+
+.self-introduction__content{
+    width: 615px;
+}
+
+.self-introduction__content__title{
+    font-size: 36px;
+}
+
+.self-introduction__content__text{
+    font-size: 24px;
 }
 
 a {
-    color: #37718E;
-    border: 1px solid #37718E;
-    padding: 10px;
+    color: azure;
 }
 
+footer{
+    color: azure;
+}
 
-footer {
-    background-color: #683257;
-    color:#C2C1C2;
+.highlight-text{
+    color:#00C344;
 }

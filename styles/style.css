@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
 
 * {
@@ -15,26 +15,54 @@ body {
 .self-introduction{
     display: flex;
     align-items: center;
-    margin: 12%;
+    margin: 8%;
     justify-content: space-between;
 }
 
 .self-introduction__content{
     width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 
 }
 
 .self-introduction__content__title{
-    font-size: 36px;
-    font-family: "Press Start 2P", system-ui;
+    font-size: 24px;
+    font-family: "Sixtyfour", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 5;
+    font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
 }
 
 .self-introduction__content__text{
-    font-size: 24px;
+    font-size: 20px;
     font-family: "Doto", sans-serif;
-    padding: 24px;
+    padding: 24px;    
+}
 
+.self-introduction__socialNetworks{
+    display: flex;
+    width: 150px;
+    justify-content: first baseline;
+    flex-direction: column;
+    gap: 15px;
     
+}
+
+.Networks{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.links{
+    text-decoration: none;
+    padding: 15px 0;
+    font-family: "Doto", sans-serif;
+    font-weight: 400;
 }
 
 
@@ -42,10 +70,19 @@ a {
     color: azure;
 }
 
-footer{
-    color: azure;
-}
-
 .highlight-text{
     color:#00C344;
 }
+
+ /*
+  width: 160px;
+    align-items: center;
+    background-color: #007E2D;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 16px;
+    font-family: "Doto", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}*/

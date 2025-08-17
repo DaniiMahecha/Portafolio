@@ -9,13 +9,12 @@
 body {
     background-color:#000B05;
     color: azure;
-    height: 100vh;
     box-sizing: border-box;
 }
 .self-introduction{
     display: flex;
     align-items: center;
-    margin: 8%;
+    margin: 2%;
     justify-content: space-between;
 }
 
@@ -24,11 +23,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin: 5%;
 
 }
 
 .self-introduction__content__title{
     font-size: 24px;
+    word-spacing: -8px;
     font-family: "Sixtyfour", sans-serif;
     font-optical-sizing: auto;
     font-weight: 5;
@@ -40,32 +41,51 @@ body {
 .self-introduction__content__text{
     font-size: 20px;
     font-family: "Doto", sans-serif;
-    padding: 24px;    
+ 
 }
 
 .self-introduction__socialNetworks{
     display: flex;
-    width: 150px;
-    justify-content: first baseline;
+    align-items:center;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
+    
     
 }
 
 .Networks{
+    border: 2px solid #162527;
+    border-radius: 8px;
+    width: 150px;
     display: flex;
-    flex-direction: row;
-    
+    align-items: center;
+    gap: 5px;
 }
+
+.Networks:hover{
+    background-color:#162527;
+}
+
 
 .links{
     text-decoration: none;
-    padding: 15px 0;
+    gap: 5;
     font-family: "Doto", sans-serif;
     font-weight: 400;
 }
 
-
+h2{
+    font-size: 20px;
+    word-spacing: -8px;
+    font-family: "Sixtyfour", sans-serif;
+    color:#00C344;
+    font-optical-sizing: auto;
+    font-weight: 5;
+    font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+    padding: 16px 0;
+}
 a {
     color: azure;
 }
@@ -74,8 +94,36 @@ a {
     color:#00C344;
 }
 
- /*
-  width: 160px;
+.footer{
+    background-color: #0E2222;
+    padding: 24PX;
+    font-family: "Doto", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 3%;
+}
+
+
+.signal{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+
+}
+
+.technologies{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+
+}
+
+
+/*
+    width: 160px;
     align-items: center;
     background-color: #007E2D;
     text-align: center;

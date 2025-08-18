@@ -11,10 +11,38 @@ body {
     color: azure;
     box-sizing: border-box;
 }
+
+.header{
+    background-color: #0E2222;
+    font-family: "Doto", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+.header__menu{
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+}
+
+.navegation{
+    justify-content:space-between ;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.navegation__element{
+    text-decoration: none;
+    text-align: center;
+}
+
+
 .self-introduction{
     display: flex;
     align-items: center;
-    margin: 2%;
+    padding: 5% 5%;
+    gap: 40px;
     justify-content: space-between;
 }
 
@@ -23,7 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin: 5%;
+    padding: 0% 5%;
 
 }
 
@@ -54,24 +82,32 @@ body {
 }
 
 .Networks{
+    font-size: 20;
     border: 2px solid #162527;
     border-radius: 8px;
-    width: 150px;
+    width: 200px; /* Aumenta el ancho si es necesario */
     display: flex;
     align-items: center;
-    gap: 5px;
+    justify-content: center; /* Centra el contenido dentro del botón */
+    gap: 8px;
+    padding: 8px 12px; /* Añade padding interno */
+    margin: 0 auto; /* Centra cada botón individualmente */
 }
 
 .Networks:hover{
     background-color:#162527;
 }
 
-
-.links{
+.links {
     text-decoration: none;
-    gap: 5;
     font-family: "Doto", sans-serif;
     font-weight: 400;
+    flex: 1; /* Permite que el texto se centre mejor */
+    text-align: center;
+}
+
+.icons {
+    flex-shrink: 0; /* Evita que los iconos se compriman */
 }
 
 h2{
@@ -96,31 +132,27 @@ a {
 
 .footer{
     background-color: #0E2222;
-    padding: 24PX;
+    padding: 24px;
     font-family: "Doto", sans-serif;
     font-weight: 400;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    gap: 3%;
-}
-
-
-.signal{
-    text-align: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
-    gap: 5%;
-
+    gap: 20px;
 }
 
 .technologies{
+    justify-self: start;
     display: flex;
     align-items: center;
-    gap: 5%;
-
+    gap: 10px;
 }
-
+.signal{
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 /*
     width: 160px;

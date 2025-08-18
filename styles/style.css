@@ -17,6 +17,7 @@ body {
     font-family: "Doto", sans-serif;
     font-weight: 400;
     box-sizing: border-box;
+    box-shadow: 0 2px 10px rgba(0, 195, 68, 0.3);
 }
 
 .header__menu{
@@ -37,13 +38,18 @@ body {
     text-align: center;
 }
 
+.navegation__element:hover{
+    box-shadow: 0 2px 10px rgba(0, 195, 68, 0.3);
+}
+
 
 .self-introduction{
+    width: auto;
     display: flex;
     align-items: center;
-    padding: 5% 5%;
     gap: 40px;
     justify-content: space-between;
+    padding: 50px;
 }
 
 .self-introduction__content{
@@ -51,12 +57,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 0% 5%;
-
 }
 
 .self-introduction__content__title{
-    font-size: 24px;
+    font-size: 20px;
     word-spacing: -8px;
     font-family: "Sixtyfour", sans-serif;
     font-optical-sizing: auto;
@@ -67,7 +71,7 @@ body {
 }
 
 .self-introduction__content__text{
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Doto", sans-serif;
  
 }
@@ -77,25 +81,47 @@ body {
     align-items:center;
     flex-direction: column;
     gap: 12px;
+}
+
+.habilitiesContainer{
+    width: auto ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    box-sizing: border-box;
+    padding: 50px;
     
-    
+   
+}
+/* Opción 4: Si quieres que se superpongan ligeramente */
+.habilitiesBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+}
+
+.habilitiesBar img {
+    margin: -30px; /* Superpone las imágenes 5px */
 }
 
 .Networks{
     font-size: 20;
     border: 2px solid #162527;
     border-radius: 8px;
-    width: 200px; /* Aumenta el ancho si es necesario */
+    width: 150px; /* Aumenta el ancho si es necesario */
     display: flex;
     align-items: center;
     justify-content: center; /* Centra el contenido dentro del botón */
     gap: 8px;
     padding: 8px 12px; /* Añade padding interno */
-    margin: 0 auto; /* Centra cada botón individualmente */
+
 }
 
 .Networks:hover{
     background-color:#162527;
+    box-shadow: 0 2px 10px rgba(0, 195, 68, 0.3);
 }
 
 .links {
@@ -110,11 +136,11 @@ body {
     flex-shrink: 0; /* Evita que los iconos se compriman */
 }
 
-h2{
-    font-size: 20px;
+.sub-title{
+    font-size: 18px;
     word-spacing: -8px;
     font-family: "Sixtyfour", sans-serif;
-    color:#00C344;
+    color: #67C26D;
     font-optical-sizing: auto;
     font-weight: 5;
     font-variation-settings:
@@ -122,12 +148,13 @@ h2{
     "SCAN" 0;
     padding: 16px 0;
 }
+
 a {
     color: azure;
 }
 
 .highlight-text{
-    color:#00C344;
+    color:#67C26D;
 }
 
 .footer{
@@ -139,6 +166,7 @@ a {
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     gap: 20px;
+    box-shadow: 0 2px 10px rgba(0, 195, 68, 0.3);
 }
 
 .technologies{
@@ -147,6 +175,7 @@ a {
     align-items: center;
     gap: 10px;
 }
+
 .signal{
     justify-self: end;
     display: flex;

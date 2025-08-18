@@ -183,6 +183,13 @@ a {
     gap: 10px;
 }
 
+.textInGreen{
+    font-size: 18px;
+    font-family: "Doto", sans-serif;
+    color: #67C26D;
+
+}
+
 /*
     width: 160px;
     align-items: center;

@@ -26,7 +26,7 @@ body {
     align-items: center;
 }
 
-.navegation{
+.header__menu__navegation{
     justify-content:space-between ;
     display: flex;
     gap: 40px;
@@ -73,7 +73,6 @@ body {
 .self-introduction__content__text{
     font-size: 18px;
     font-family: "Doto", sans-serif;
- 
 }
 
 .self-introduction__socialNetworks{
@@ -83,7 +82,7 @@ body {
     gap: 12px;
 }
 
-.habilitiesContainer{
+.habilities__Container{
     width: auto ;
     display: flex;
     align-items: center;
@@ -91,18 +90,22 @@ body {
     gap: 24px;
     box-sizing: border-box;
     padding: 50px;
-    
-   
+    box-shadow: 0 2px 10px rgba(0, 195, 68, 0.3);
+    border-radius: 16px;
 }
-/* Opción 4: Si quieres que se superpongan ligeramente */
-.habilitiesBar {
+
+.habilities__Container:hover{
+    background-color: #162527;
+}
+
+.habilities__Container__habilitiesBar{
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: center;
 }
 
-.habilitiesBar img {
+.habilities__Container__habilitiesBar img {
     margin: -30px; /* Superpone las imágenes 5px */
 }
 
@@ -190,15 +193,3 @@ a {
 
 }
 
-/*
-    width: 160px;
-    align-items: center;
-    background-color: #007E2D;
-    text-align: center;
-    padding: 21.5px 0;
-    border-radius: 16px;
-    font-family: "Doto", sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    text-decoration: none;
-}*/

@@ -6,17 +6,26 @@
 	margin: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color:#000B05;
     color: azure;
     box-sizing: border-box;
     font-family: "Doto", sans-serif;
     font-weight: 400;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header{
     background-color: #0E2222;
     font-family: "Doto", sans-serif;
+    font-size: 18;
     font-weight: 400;
     box-sizing: border-box;
     box-shadow: 0 2px 10px rgba(0, 195, 68, 0.3);
@@ -24,7 +33,8 @@ body {
 
 .header__menu{
     display: flex;
-    justify-content:space-evenly ;
+    justify-content: left ;
+    padding-left: 80px;
     align-items: center;
 }
 
@@ -48,21 +58,23 @@ body {
 .self-introduction{
     width: auto;
     display: flex;
+    flex: 1;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     justify-content: space-between;
-    padding: 50px;
+    padding: 20 px 50px;
 }
 
 .self-introduction__content{
     width: 900px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
+    padding: 20px 20px 20px 80px;
 }
 
 .self-introduction__content__title{
-    font-size: 20px;
+    font-size: 18px;
     word-spacing: -8px;
     font-family: "Sixtyfour", sans-serif;
     font-optical-sizing: auto;
@@ -73,7 +85,7 @@ body {
 }
 
 .self-introduction__content__text{
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Doto", sans-serif;
 }
 
@@ -84,28 +96,6 @@ body {
     gap: 12px;
 }
 
-.habilities__Container{
-    width: auto ;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 24px;
-    box-sizing: border-box;
-    border-radius: 16px;
-    padding: 25px 50px 25px 50px;
-}
-
-
-.habilities__Container__habilitiesBar{
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.habilities__Container__habilitiesBar img {
-    margin: -30px; /* Superpone las imágenes 5px */
-}
 
 .Networks{
     font-size: 20;
@@ -129,11 +119,13 @@ body {
     background-color: #0E2222;
     font-family: "Doto", sans-serif;
     font-weight: 400;
+    font-size: 16px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     gap: 20px;
     box-shadow: 0 2px 10px rgba(0, 195, 68, 0.3);
+    padding: 16px 24px;
 }
 
 .technologies{
@@ -190,5 +182,30 @@ a {
     color:#67C26D;
 }
 
+/*------------------------------------------------------*/
+.self-introduction__technologies{
+    display: flex;
+    align-items:center;
+    gap: 12px;
+    padding: 20px;
+}
+
+.technologies__1{
+    font-size: 16;
+    border: 2px solid #162527;
+    border-radius: 8px;
+    width: 150px; /* Aumenta el ancho si es necesario */
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido dentro del botón */
+    gap: 8px;
+    padding: 8px 12px;
+}
+
+.technologies__1:hover{
+    background-color:#162527;
+    box-shadow: 0 2px 10px rgba(0, 195, 68, 0.3);;
+}
 
 

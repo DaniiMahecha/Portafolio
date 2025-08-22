@@ -4,6 +4,7 @@
 * {
 	padding: 0;
 	margin: 0;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -39,6 +40,8 @@ body {
 .header{
     font-family: var(--text-font);
     padding-top: 20px;
+    padding-left: 50px;
+    
 }
 
 .header__menu{
@@ -199,17 +202,29 @@ a {
 /*------------------------------------------------------*/
 .self-introduction__technologies{
     display: flex;
-    align-items:center;
+    align-items:flex-start;
+    flex-direction: column;
     gap: 12px;
-    padding: 20px;
+}
+
+.self-introduction__technologies__web{
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+}
+
+.self-introduction__technologies__University{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
 }
 
 .technologies__1{
     font-size: 16;
     border: 2px solid var(--background-color);
     border-radius: 8px;
-    width: 150px; /* Aumenta el ancho si es necesario */
-    height: 10px;
+    width: 60px; /* Aumenta el ancho si es necesario */
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center; /* Centra el contenido dentro del botón */

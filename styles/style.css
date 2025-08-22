@@ -74,7 +74,7 @@ body {
     align-items: center;
     gap: 20px;
     justify-content: space-between;
-    padding: 20 px 50px;
+    padding: 20px 50px;
 }
 
 .self-introduction__content{
@@ -127,8 +127,8 @@ body {
     box-shadow: var(--box-shadow);
 }
 
-.footer{
-    background-color: #0E2222;
+.footer {
+    background-color: var(--sec-color);
     font-family: var(--text-font);
     font-weight: 400;
     font-size: 14px;
@@ -137,7 +137,8 @@ body {
     align-items: center;
     gap: 20px;
     box-shadow: var(--box-shadow);
-    padding: 16px 24px;
+    padding: 4px 6px;
+    width: 100%; 
 }
 
 .technologies{

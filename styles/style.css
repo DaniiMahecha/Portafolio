@@ -28,24 +28,24 @@ html, body {
 body {
     background-color: var(--main-color);
     color: var(--text-color);
-    box-sizing: border-box;
     font-family: var(--text-font);
     font-weight: 400;
     display: flex;
     flex-direction: column;
 }
 
+/*------------Header---------------*/
+
 .header{
     font-family: var(--text-font);
-    padding-top: 20px;
-    padding-left: 50px;
+    padding:2% 0% 0% 5%;
     
 }
 
 .header__menu{
     display: flex;
+    flex: 1;
     justify-content: left ;
-    padding-left: 80px;
     align-items: center;
 }
 
@@ -67,28 +67,27 @@ body {
     box-shadow: var(--box-shadow);
 }
 
+/*--------------Main--------------*/
+
 
 .self-introduction{
-    width: auto;
     display: flex;
     flex: 1;
     align-items: center;
-    gap: 20px;
     justify-content: space-between;
-    padding: 20px 50px;
 }
 
 .self-introduction__content{
-    width: 900px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 20px 20px 80px;
+    padding:0% 0% 0% 5%;
 }
 
 .self-introduction__content__title{
     word-spacing: -0.5rem;
-    font-size: 20px;
+    font-size: 1.3rem;
     font-family: var(--title-font);
     font-optical-sizing: auto;
     font-weight: 5;
@@ -109,12 +108,17 @@ body {
     gap: 12px;
 }
 
+.main__image{
+    width: 50%;
+    padding:0% 5% 0% 0%;
+}
+
 
 .Networks{
-    font-size: 20;
+    font-size: 1.3rem;
     border: 2px solid var(--background-color);
     border-radius: 8px;
-    width: 150px; /* Aumenta el ancho si es necesario */
+    width: 50%; /* Aumenta el ancho si es necesario */
     display: flex;
     align-items: center;
     justify-content: center; /* Centra el contenido dentro del botón */
@@ -128,16 +132,12 @@ body {
     box-shadow: var(--box-shadow);
 }
 
+/*----------------Footer----------------*/
+
 .footer {
     background-color: var(--sec-color);
     font-family: var(--text-font);
-    font-weight: 400;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
-    gap: 20px;
     box-shadow: var(--box-shadow);
-    padding: 4px 6px;
     width: 100%; 
 }
 
@@ -148,17 +148,6 @@ body {
     gap: 10px;
 }
 
-.main__image{
-    align-items: center;
-    padding: 20px 80px 20px 20px;
-}
-
-.signal{
-    justify-self: end;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
 .textInGreen{
     font-size: 0.875rem;
@@ -169,6 +158,7 @@ body {
 
 .links {
     text-decoration: none;
+    font-size: 0.875rem;
     font-family: var(--text-font);
     font-weight: 400;
     flex: 1; /* Permite que el texto se centre mejor */
@@ -234,4 +224,29 @@ a {
     box-shadow: var(--box-shadow);
 }
 
+/*-------------Media Queries------------------*/
+
+@media (max-width: 1100px ){
+
+    .self-introduction{
+        flex-direction: column-reverse;
+    }
+
+    .header__menu{
+        justify-content: center;
+        padding: 10%;
+    }
+
+    .self-introduction__content{
+        justify-content: center;
+        padding: 5% 0% 5% 0%;
+    }
+
+    .main__image{
+        justify-content: center;
+        padding: 0%;
+    }
+
+
+}
 

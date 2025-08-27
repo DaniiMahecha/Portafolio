@@ -82,7 +82,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding:0% 0% 0% 5%;
+    padding:5% 0% 5% 5%;
 }
 
 .self-introduction__content__title{

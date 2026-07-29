@@ -7,8 +7,7 @@ A cyberpunk-themed portfolio showcasing frontend development skills and professi
 
 ### 🎯 Project: Interactive Developer Portfolio
 
-<img width="493" height="399" alt="portfolio-demo" src="assets
-/Captura de pantalla 2026-07-29 113155.png" />
+<img width="493" height="399" alt="portfolio-demo" src="assets/Captura de pantalla 2026-07-29 113155.png" />
 
 <p>
 <img src="https://img.shields.io/badge/STATUS-LIVE-green">

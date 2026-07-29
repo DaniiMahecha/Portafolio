@@ -3,7 +3,7 @@
 # 🚀 Personal Portfolio | Daniel Felipe Mahecha 💻
 A cyberpunk-themed portfolio showcasing frontend development skills and professional journey.
 ### Frontend Developer & Systems Engineering Student
-<img width="500" height="300" alt="portfolio-preview" src="[TU_SCREENSHOT_AQUI]" />
+<img width="500" height="300" alt="portfolio-preview" src="Captura de pantalla 2026-07-29 112923.png" />
 
 ### 🎯 Project: Interactive Developer Portfolio
 
